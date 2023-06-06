@@ -1,0 +1,26 @@
+.container {
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgb(80, 80, 80);
+  margin: 10px;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 48%;
+  height: 60%;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.list {
+  text-align: center;
+  list-style-type: none;
+}
+
+.container:hover {
+  transform: scale(101%);
+  transition: 0.4s linear;
+  cursor: pointer;
+}

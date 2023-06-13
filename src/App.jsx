@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import Recipe from "./Recipe";
+import Titlebar from "./Titlebar";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -25,17 +26,18 @@ function App() {
     setQuery(input);
     setInput("");
   }
-  console.log(recipes);
 
   return (
     <>
       <div>
+        <Titlebar />
         <div className="App">
           <form onSubmit={handelSubmit} className="search-form">
             <input
               type="text"
               className="search-bar"
               value={input}
+              placeholder="Enter Main Ingredient"
               onChange={(e) => setInput(e.target.value)}
             />
             <button type="submit" className="search-button">

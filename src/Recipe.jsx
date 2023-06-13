@@ -4,20 +4,19 @@ import "./Recipe.css";
 function Recipe(props) {
   return (
     <div className="container">
-      <h1>{props.title}</h1>
+      <h3>{props.title}</h3>
       <p>
-        <b>Calories:</b>
+        <b>Calories: </b>
         {props.calorie}
       </p>
-      <img src={props.img} alt="" />
+      <img src={props.img} alt={props.title} />
       <ul className="list">
-        <p>
-          <b>Ingredients:</b>
-          <br />
-          <br />
-        </p>
-        {props.ingredients.map((item) => (
-          <li className="list-li">{item.text}</li>
+        <b>Ingredients:</b>
+        <br />
+        {props.ingredients.map((item, index) => (
+          <li key={index} className="list-li">
+            {item.text}
+          </li>
         ))}
       </ul>
     </div>

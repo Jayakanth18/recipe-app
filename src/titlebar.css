@@ -1,0 +1,10 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: rgb(165, 234, 228);
+}
+.logo{
+    color: rgb(0, 0, 0);
+}

@@ -1,9 +1,10 @@
 import React from "react";
 import "./Recipe.css";
+
 function Recipe(props) {
   return (
     <div className="container">
-      <h1>{props.label}</h1>
+      <h1>{props.title}</h1>
       <p>
         <b>Calories:</b>
         {props.calorie}

@@ -25,6 +25,7 @@ function App() {
     setQuery(input);
     setInput("");
   }
+  console.log(recipes);
 
   return (
     <>
@@ -47,7 +48,7 @@ function App() {
                 <Recipe
                   key={Math.random(Math.random() * index)}
                   img={singleRecipe.recipe.image}
-                  title={singleRecipe.recipe.url}
+                  title={singleRecipe.recipe.label}
                   calorie={singleRecipe.recipe.calories}
                   ingredients={singleRecipe.recipe.ingredients}
                 />

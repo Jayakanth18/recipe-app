@@ -7,7 +7,7 @@ function Recipe(props) {
       <h3>{props.title}</h3>
       <p>
         <b>Calories: </b>
-        {props.calorie}
+        {Math.round(props.calorie)}
       </p>
       <img src={props.img} alt={props.title} />
       <ul className="list">

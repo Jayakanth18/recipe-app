@@ -5,6 +5,7 @@ function Recipe(props) {
   return (
     <div className="container">
       <h3>{props.title}</h3>
+      <br />
       <p>
         <b>Calories: </b>
         {Math.round(props.calorie)}
